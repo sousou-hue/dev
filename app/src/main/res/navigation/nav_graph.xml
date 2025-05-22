@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.tp5.HomeFragment"
+        android:label="Accueil">
+        <action
+            android:id="@+id/action_homeFragment_to_calendrierSemestreFragment"
+            app:destination="@id/calendrierSemestreFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_emploiDuTempsFragment"
+            app:destination="@id/emploiDuTempsFragment" />
+    </fragment>
+    <fragment android:id="@+id/absenceFragment" />
+    <fragment
+        android:id="@+id/calendrierSemestreFragment"
+        android:name="com.example.tp5.CalendrierSemestreFragment"
+        android:label="Calendrier" />
+
+    <fragment
+        android:id="@+id/emploiDuTempsFragment"
+        android:name="com.example.tp5.EmploiDuTempsFragment"
+        android:label="Emploi du temps" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.tp5.HistoryFragment"
+        android:label="Récemment consultés" />
+
+</navigation>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Navigation Drawers</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <string name="carousel_image_desc">Image du carrousel</string>
+    <string-array name="historique_titles">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </string-array>
+
+    <string-array name="historique_description">
+        <item>Description 1</item>
+        <item>Description 2</item>
+        <item>Description 3</item>
+    </string-array>
+
+    <string-array name="historique_dates">
+        <item>01/01/2025</item>
+        <item>02/01/2025</item>
+        <item>03/01/2025</item>
+    </string-array>
+    <string-array name="messages_title">
+        <item>COURS Linux</item>
+        <item>Tp2</item>
+        <item>Séeminaire cydersecurité</item>
+        <item>Title 4</item>
+    </string-array>
+
+    <string-array name="message_content">
+        <item>chapitre3: Devops</item>
+        <item>manipulation </item>
+        <item>conférence animée par un expert en cybersécurité</item>
+        <item>Description for item 4</item>
+    </string-array>
+
+    <string-array name="message_dates">
+        <item>2025-juin-28</item>
+        <item>2025-juillet-26</item>
+        <item>2025-juillet-23</item>
+        <item>2025-juillet-21</item>
+    </string-array>
+
+
+</resources>

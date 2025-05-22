@@ -1,0 +1,31 @@
+---
+- name: Déployer l’APK avec NGINX (sans Kubernetes)
+  hosts: k8s-master
+  become: true
+  vars:
+    apk_src: ""  # Chemin absolu transmis par Jenkins
+
+  tasks:
+    - name: Installer NGINX s'il n'est pas présent
+      apt:
+        name: nginx
+        state: present
+        update_cache: true
+
+    - name: Créer le dossier de publication si absent
+      file:
+        path: /var/www/html
+        state: directory
+        mode: '0755'
+
+    - name: Copier l’APK dans le dossier NGINX
+      copy:
+        src: "{{ apk_src }}"
+        dest: /var/www/html/app-debug.apk
+        mode: '0644'
+        remote_src: no
+
+    - name: Redémarrer NGINX
+      service:
+        name: nginx
+        state: restarted

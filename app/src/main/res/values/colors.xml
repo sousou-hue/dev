@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Couleur principale de la Toolbar et des boutons -->
+    <color name="primary">#6200EE</color>
+    <color name="primaryVariant">#3700B3</color>
+    <color name="onPrimary">#FFFFFFFF</color>
+
+    <!-- Couleur de fond principale -->
+    <color name="background">#F5F5F5</color>
+    <color name="onBackground">#212121</color>
+
+    <!-- Couleur des icônes du Navigation Drawer -->
+    <color name="nav_icon_color">#6200EE</color>
+
+    <!-- Couleurs pour le texte et les titres -->
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#757575</color>
+
+    <!-- Couleur pour les éléments sélectionnés du menu -->
+    <color name="nav_item_selected">#BB86FC</color>
+</resources>
